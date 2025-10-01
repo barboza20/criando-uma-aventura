@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada do Jogador de Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1 id="player-name">Seu Jogador</h1>
+            <div class="stats-box">
+                <p>Energia: <span id="energy-stat">100</span></p>
+                <p>Habilidade: <span id="skill-stat">75</span></p>
+                <p>Popularidade: <span id="popularity-stat">20</span></p>
+            </div>
+        </header>
+        <div class="field-display">
+            <p id="game-narrative">Você está prestes a entrar em campo para a grande final. O que você faz?</p>
+        </div>
+        <div id="choice-buttons" class="choice-buttons">
+            <button class="btn" onclick="takeAction('passar')">Passar a bola</button>
+            <button class="btn" onclick="takeAction('driblar')">Driblar o adversário</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
